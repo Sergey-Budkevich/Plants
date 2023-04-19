@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&display=swap');
+
+:root{
+  --color-green: #499A18;
+  --color-orange: #E06733;
+  --color-light-gray: #717171;
+  --color-gray: #636060;
+  --color-bg-light: #EDF2EC;
+  --color-link: #010201;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+

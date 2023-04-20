@@ -20,6 +20,11 @@
   scroll-behavior: smooth;
 }
 
+button{
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .content{
   max-width: calc(1220px + 50px * 2);
   padding: 0 50px;
@@ -29,7 +34,7 @@
 .title{
   font-family: 'Inika';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 40px;
   line-height: 52px;
 }
@@ -39,8 +44,6 @@
   display: flex;
   flex-direction: column;
 }
-
-
 
 .header{
   padding: 40px 0;
@@ -147,6 +150,11 @@
   border-radius: 10px;
 }
 
+.welcome__link:hover{
+  color: var(--color-defaul-white);
+  background-color: var(--color-orange);
+}
+
 .about{
   padding: 90px 0;
 }
@@ -180,4 +188,82 @@
   font-size: 20px;
   line-height: 30px;
   color: var(--color-gray);
+}
+
+.service{
+  padding: 40px 0 120px;
+  background-color: var(--color-bg-light);
+}
+
+.service__header{
+  display: flex;
+  align-items: center;
+  column-gap: 140px;
+}
+
+.service__title{
+  max-width: 305px;
+  width: 100%;
+  color: var(--color-green);
+}
+
+.service__buttons{
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.service__button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 50px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--color-orange);
+  border: 1px solid #E06733;
+  border-radius: 5px;
+}
+
+.service__cards{
+  margin-top: 90px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 110px;
+  row-gap: 55px;
+}
+
+.service-card{
+  padding: 0 0 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.service-card__title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--color-orange);
+}
+
+.service-card__text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-light-gray);
 }

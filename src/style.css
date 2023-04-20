@@ -8,6 +8,7 @@
   --color-bg-light: #EDF2EC;
   --color-link: #010201;
   --color-default-black: #000000;
+  --color-defaul-white: #FFFFFF;
 }
 
 *{
@@ -20,9 +21,23 @@
 }
 
 .content{
-  max-width: 1220px;
+  max-width: calc(1220px + 50px * 2);
   padding: 0 50px;
   margin: 0 auto;
+}
+
+.title{
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -75,3 +90,94 @@
   color: var(--color-orange);
   border-bottom: 2px solid var(--color-orange);
 } 
+
+.welcome{
+  padding: 60px 0;
+  background-color: var(--color-bg-light);
+}
+
+.welcome__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 225px;
+}
+
+.welcome__info{
+  max-width: 550px;
+  row-gap: 45px;
+}
+
+.welcome__title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: var(--color-light-gray);
+}
+
+.welcome__title span{
+  color: var(--color-green);
+}
+
+.welcome__text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: var(--color-gray);
+}
+
+.welcome__link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 44px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--color-default-black);
+  border: 2px solid var(--color-orange);
+  border-radius: 10px;
+}
+
+.about{
+  padding: 90px 0;
+}
+
+.about__content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 150px;
+}
+
+.about__info{
+  max-width: 605px;
+  row-gap: 40px;
+}
+
+.about__title{
+  max-width: 460px;
+  width: 100%;
+  color: var(--color-green);
+}
+
+.about__title span{
+  color: var(--color-orange);
+}
+
+.about__text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-gray);
+}

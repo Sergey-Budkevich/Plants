@@ -9,6 +9,7 @@
   --color-link: #010201;
   --color-default-black: #000000;
   --color-defaul-white: #FFFFFF;
+  --color-border-light: #E3E1D5;
 }
 
 *{
@@ -20,6 +21,11 @@
   scroll-behavior: smooth;
 }
 
+button{
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .content{
   max-width: calc(1220px + 50px * 2);
   padding: 0 50px;
@@ -29,9 +35,23 @@
 .title{
   font-family: 'Inika';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 40px;
   line-height: 52px;
+}
+
+.button_light{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--color-orange);
+  border: 1px solid #E06733;
+  border-radius: 5px;
 }
 
 .info{
@@ -39,7 +59,6 @@
   display: flex;
   flex-direction: column;
 }
-
 
 
 .header{
@@ -147,6 +166,11 @@
   border-radius: 10px;
 }
 
+.welcome__link:hover{
+  color: var(--color-defaul-white);
+  background-color: var(--color-orange);
+}
+
 .about{
   padding: 90px 0;
 }
@@ -180,4 +204,169 @@
   font-size: 20px;
   line-height: 30px;
   color: var(--color-gray);
+}
+
+.service{
+  padding: 40px 0 120px;
+  background-color: var(--color-bg-light);
+}
+
+.service__header{
+  display: flex;
+  align-items: center;
+  column-gap: 140px;
+}
+
+.service__title{
+  max-width: 305px;
+  width: 100%;
+  color: var(--color-green);
+}
+
+.service__buttons{
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.service__button{
+  width: 160px;
+  height: 50px;
+}
+
+.service__cards{
+  margin-top: 90px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 110px;
+  row-gap: 55px;
+}
+
+.service-card{
+  padding: 0 0 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.service-card__title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--color-orange);
+}
+
+.service-card__text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-light-gray);
+}
+
+.prices{
+  padding: 40px 0 115px;
+}
+
+.prices__content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices__left{
+  max-width: 330px;
+  width: 100%;
+  row-gap: 60px;
+}
+
+.prices__title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--color-default-black);
+}
+
+.prices__items{
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 20px;
+}
+
+.prices__item{
+  width: 100%;
+  padding: 17px 40px;
+  background-color: var(--color-bg-light);
+  border-radius: 20px;
+}
+
+.prices__item button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--color-default-black);
+  border: none;
+}
+
+.prices__item span{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  background-image: url(../assets/icons/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.prices__right{
+  max-width: 455px;
+  width: 100%;
+  align-items: flex-end;
+  row-gap: 40px;
+}
+
+.prices__subtitle{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  color: var(--color-default-black);
+}
+
+.prices__subtitle span{
+  color: var(--color-green);
+}
+
+.prices__link{
+  width: 160px;
+  height: 50px;
+  font-weight: 700;
+}
+
+.prices__link:hover{
+  background-color: var(--color-orange);
+  color: var(--color-defaul-white);
 }
